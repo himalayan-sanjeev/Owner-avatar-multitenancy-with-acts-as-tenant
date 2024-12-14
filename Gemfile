@@ -73,3 +73,5 @@ gem "devise", "~> 4.8"
 gem "bootstrap", "~> 5.2"
 
 gem "pg", "~> 1.4"
+
+gem 'acts_as_tenant'
