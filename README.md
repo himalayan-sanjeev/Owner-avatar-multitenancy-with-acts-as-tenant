@@ -1,24 +1,28 @@
-# README
+# ActsAsTenant Multi-Tenancy Sample App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This is a sample Rails application demonstrating multi-tenancy using the `acts_as_tenant` gem. The app features two models: `Post` and `User`. Each `User` belongs to a specific tenant, and all actions on `Post` are scoped to the tenant.
 
-* Ruby version
+### Features:
+- Multi-tenancy implementation using `acts_as_tenant`
+- Scoped resources (`Post`) to the current tenant
+- Tenant switching via `current_tenant` context
+- Basic CRUD operations for `Post` and `User` under tenant isolation
 
-* System dependencies
+---
 
-* Configuration
+## Setup
 
-* Database creation
+### Prerequisites
+- Ruby 2.7.2+
+- Rails 7+
+- PostgreSQL (recommended for multi-tenancy)
 
-* Database initialization
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/himalayan-sanjeev/multitenancy-with-acts-as-tenant.git
+   cd multitenancy-with-acts-as-tenant
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
